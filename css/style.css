@@ -205,19 +205,16 @@
 
 .gallery {
   height: 1580px;
-  border: 2px solid red;
   margin: 0 auto;
   background-color: #FFE92F; }
   .gallery .container {
     height: 100%;
-    border: 2px solid green;
     margin: 0 auto; }
     .gallery .container .gal-title {
       font-size: 50px;
       color: #262626;
       font-weight: 700;
       font-family: "Raleway";
-      border: 2px solid green;
       text-align: center; }
       @media only screen and (max-width: 767px) {
         .gallery .container .gal-title {
@@ -228,25 +225,30 @@
       font-weight: 300;
       font-family: "Raleway";
       text-align: center;
-      border: 2px solid green;
       margin: 50px auto;
       margin-bottom: 30px; }
     .gallery .container .galpart-1 {
       display: flex;
       justify-content: space-between;
       /* margin-bottom: 5px; */ }
+      .gallery .container .galpart-1 img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px; }
       .gallery .container .galpart-1 .berries {
         display: flex;
         flex-direction: column; }
         .gallery .container .galpart-1 .berries .berri {
-          margin-bottom: 20px; }
-    .gallery .container .galpart-2 {
-      display: flex;
-      justify-content: space-between; }
+          margin-bottom: 21px; }
+    .gallery .container .galpart-2 img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
     .gallery .container .gallery-button {
       background-color: blue;
       position: relative;
-      align-items: center; }
+      align-items: center;
+      border: 2px solid red; }
       .gallery .container .gallery-button .gal-button {
         font-size: 20px;
         line-height: 27px;
@@ -259,7 +261,9 @@
         position: absolute;
         right: 50%;
         transform: translate(50%, 0);
-        height: 56px; }
+        border: 2px solid blue;
+        max-width: 150px;
+        height: 20px; }
 
 @font-face {
   font-family: "Raleway";

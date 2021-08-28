@@ -1,11 +1,11 @@
 .gallery {
     height: 1580px;
-     border: 2px solid red;
+    //  border: 2px solid red;
     margin: 0 auto;
     background-color:#FFE92F ;
 .container {
 height: 100%;
-border: 2px solid green;
+// border: 2px solid green;
 margin: 0 auto;
 .gal-title {
     font-size: 50px;
@@ -14,7 +14,7 @@ margin: 0 auto;
     font-family: "Raleway";
     // margin: 0 auto;
     // padding-top: 100px;
-     border: 2px solid green; 
+    //  border: 2px solid green; 
     // width: 307px;
     // height: 136px;
     text-align: center;
@@ -31,34 +31,46 @@ margin: 0 auto;
     font-weight: 300;
     font-family: "Raleway";
     text-align: center;
-    border: 2px solid green; 
+    // border: 2px solid green; 
     margin: 50px auto;
-    // padding-bottom: 41px;
-    margin-bottom: 30px;
+    // padding-bottom: 40px;
+    margin-bottom: 30px; 
     }
     .galpart-1 {
         display: flex;
         justify-content: space-between;
+        // border: 2px solid red;
         /* margin-bottom: 5px; */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
 
 .berries {
 display: flex;
 flex-direction: column;
 .berri {
-margin-bottom:20px ;
+margin-bottom:21px;
 }
 }
 
 }
 .galpart-2 {
-    display: flex;
-    justify-content: space-between;
+    // border: 2px solid red;
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 
 }
 .gallery-button {
     background-color: blue;
     position: relative;
 align-items: center;
+border: 2px solid red;
 .gal-button {
     font-size: 20px;
     line-height: 27px;
@@ -72,7 +84,12 @@ align-items: center;
     right: 50%;
     transform: translate(50%,0);
     // width: 200px;
-    height: 56px;
+    // height: 56px;
+    border: 2px solid blue;
+    max-width: 150px;
+    height: 20px;
+   
+ 
     }
 }
 }
