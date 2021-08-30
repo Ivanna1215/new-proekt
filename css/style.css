@@ -204,17 +204,18 @@
             font-size: 45px; } }
 
 .gallery {
-  height: 1580px;
   margin: 0 auto;
   background-color: #FFE92F; }
   .gallery .container {
     height: 100%;
+    border: 2px solid green;
     margin: 0 auto; }
     .gallery .container .gal-title {
       font-size: 50px;
       color: #262626;
       font-weight: 700;
       font-family: "Raleway";
+      border: 2px solid green;
       text-align: center; }
       @media only screen and (max-width: 767px) {
         .gallery .container .gal-title {
@@ -231,39 +232,87 @@
       display: flex;
       justify-content: space-between;
       /* margin-bottom: 5px; */ }
-      .gallery .container .galpart-1 img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px; }
       .gallery .container .galpart-1 .berries {
         display: flex;
         flex-direction: column; }
         .gallery .container .galpart-1 .berries .berri {
           margin-bottom: 21px; }
-    .gallery .container .galpart-2 img {
-      max-width: 100%;
+    @media only screen and (min-width: 600px) and (max-width: 1500px) {
+      .gallery .container .galpart-2 {
+        display: flex;
+        justify-content: space-between; } }
+    @media only screen and (min-width: 600px) and (max-width: 1500px) {
+      .gallery .container .galpart-2 .yogurt {
+        margin-right: 15px; } }
+    .gallery .container .gal-button {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 300;
+      font-family: "Raleway";
+      background: #5585A2;
+      margin: 50px auto;
+      text-align: center;
+      position: absolute;
+      right: 50%;
+      transform: translate(50%, 0);
       height: auto;
+      border: 2px solid blue;
+      max-width: 150px;
       margin-bottom: 20px; }
-    .gallery .container .gallery-button {
-      background-color: blue;
-      position: relative;
-      align-items: center;
+      @media only screen and (max-width: 767px) {
+        .gallery .container .gal-button {
+          font-size: 8px; } }
+
+.sub {
+  height: 500px;
+  border: 2px solid blue;
+  margin: 0 auto;
+  background: url(../img/subscribe.png) bottom left;
+  background-size: 1500px; }
+  .sub .container {
+    height: 90%;
+    margin: 0 auto; }
+    .sub .container .sub-title {
+      font-size: 40px;
+      color: #262626;
+      font-weight: 700;
+      font-family: "Raleway";
+      text-align: left;
+      margin-top: 200px;
+      margin-bottom: 34px;
       border: 2px solid red; }
-      .gallery .container .gallery-button .gal-button {
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        .sub .container .sub-title {
+          font-size: 16px; } }
+    .sub .container .sub-text {
+      font-size: 17px;
+      color: #262626;
+      font-weight: 300;
+      font-family: "Raleway";
+      margin-bottom: 20px; }
+    .sub .container .sub-mail {
+      display: flex;
+      align-items: center;
+      /* border: 2px solid red; */ }
+      .sub .container .sub-mail .sub-yes {
+        font-size: 15px;
+        line-height: 27px;
+        color: #262626;
+        font-weight: 300;
+        font-family: "Raleway";
+        background-color: white;
+        height: 56px;
+        margin-right: 30px; }
+      .sub .container .sub-mail .sub-but {
+        border: 2px solid #290563;
+        border: none; }
+      .sub .container .sub-mail .notidea {
+        background: #96B92C;
         font-size: 20px;
         line-height: 27px;
         color: #ffffff;
         font-weight: 300;
-        font-family: "Raleway";
-        background: #5585A2;
-        margin: 50px auto;
-        text-align: center;
-        position: absolute;
-        right: 50%;
-        transform: translate(50%, 0);
-        border: 2px solid blue;
-        max-width: 150px;
-        height: 20px; }
+        font-family: "Raleway"; }
 
 @font-face {
   font-family: "Raleway";
