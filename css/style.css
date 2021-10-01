@@ -481,8 +481,6 @@
   margin: 0 auto;
   padding-top: 50px; }
   .contact .container {
-    height: 90%;
-    border: 2px solid red;
     margin: 0 auto;
     color: red; }
     .contact .container .contact-title {
@@ -502,83 +500,76 @@
       font-weight: 300;
       font-family: "Raleway";
       text-align: center; }
-      .contact .container .contact-text .cFcontainer {
-        width: 1200px;
-        height: 70%;
-        margin: 0 auto;
+      @media only screen and (max-width: 800px) {
+        .contact .container .contact-text {
+          margin-bottom: 10px; } }
+    .contact .container .wrap {
+      margin: 0 auto; }
+      @media only screen and (min-width: 400px) {
+        .contact .container .wrap {
+          display: flex;
+          justify-content: space-between; } }
+      .contact .container .wrap .contact-block1 {
         display: flex;
-        justify-content: space-between; }
-        .contact .container .contact-text .cFcontainer .contact-block1 {
-          width: 50%;
-          border: 2px solid red; }
-          .contact .container .contact-text .cFcontainer .contact-block1 .contact-name {
-            width: 80%;
-            height: 50px;
-            background-color: #7DDFDF;
+        flex-direction: column; }
+        @media only screen and (min-width: 300px) and (max-width: 768px) {
+          .contact .container .wrap .contact-block1 {
             display: flex;
             flex-direction: column;
-            border: none;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-            padding: 10px;
-            color: white;
-            outline: none; }
-          .contact .container .contact-text .cFcontainer .contact-block1 .contact-message {
-            width: 80%;
-            height: 180px;
-            background-color: #7DDFDF;
-            box-sizing: border-box;
-            border: none;
-            padding: 10px;
-            outline: none; }
-          .contact .container .contact-text .cFcontainer .contact-block1 input::placeholder,
-          .contact .container .contact-text .cFcontainer .contact-block1 textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5); }
-          .contact .container .contact-text .cFcontainer .contact-block1 input:focus,
-          .contact .container .contact-text .cFcontainer .contact-block1 textarea:focus {
-            background-color: #00C4C4;
-            border-left: 3px solid gray; }
-          .contact .container .contact-text .cFcontainer .contact-block1 .BuTton-cahee {
-            width: 200px;
-            height: 56px;
-            background: #3477AC;
-            text-transform: uppercase;
-            font-size: 20px;
-            line-height: 25px;
-            color: #ffffff;
-            font-weight: 301;
-            font-family: "Raleway";
-            margin: 0 auto;
-            border: none;
-            margin-top: 15px; }
-        .contact .container .contact-text .cFcontainer .contact-block2 {
-          border: 2px solid blue; }
-          .contact .container .contact-text .cFcontainer .contact-block2 .wrapp-address {
-            /* border: 2px solid green; */
-            font-size: 17px;
-            color: #262626;
-            font-family: "Raleway";
-            margin-bottom: 20px; }
-          .contact .container .contact-text .cFcontainer .contact-block2 .contact-title-AeP {
-            font-weight: 700;
-            text-transform: uppercase; }
-          .contact .container .contact-text .cFcontainer .contact-block2 .sity-sAp {
-            font-weight: 200; }
-          .contact .container .contact-text .cFcontainer .contact-block2 .wrapp-email {
-            /* border: 2px solid red; */
-            font-size: 17px;
-            color: #262626;
-            font-family: "Raleway";
-            margin-bottom: 20px; }
-          .contact .container .contact-text .cFcontainer .contact-block2 .wrapp-phone {
-            /* border: 2px solid fuchsia; */
-            font-size: 17px;
-            line-height: 25px;
-            color: #262626;
-            font-family: "Raleway";
-            margin-bottom: 20px; }
+            justify-content: space-between; } }
+        .contact .container .wrap .contact-block1 .contact-name {
+          background-color: #7DDFDF;
+          display: flex;
+          flex-direction: column;
+          border: none;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          padding: 10px;
+          color: white;
+          outline: none; }
+        .contact .container .wrap .contact-block1 .contact-message {
+          background-color: #7DDFDF;
+          box-sizing: border-box;
+          border: none;
+          padding: 25px;
+          outline: none; }
+        .contact .container .wrap .contact-block1 input::placeholder,
+        .contact .container .wrap .contact-block1 textarea::placeholder {
+          color: rgba(255, 255, 255, 0.5); }
+        .contact .container .wrap .contact-block1 input:focus,
+        .contact .container .wrap .contact-block1 textarea:focus {
+          background-color: #00C4C4;
+          border-left: 3px solid gray; }
+      @media only screen and (min-width: 600px) and (max-width: 2400px) {
+        .contact .container .wrap .contact-block2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; } }
+      .contact .container .wrap .contact-block2 .wrapp-address {
+        /* border: 2px solid green; */
+        font-size: 17px;
+        color: #262626;
+        font-family: "Raleway";
+        margin-bottom: 20px; }
+      .contact .container .wrap .contact-block2 .contact-title-AeP {
+        font-weight: 700;
+        text-transform: uppercase; }
+      .contact .container .wrap .contact-block2 .sity-sAp {
+        font-weight: 200; }
+      .contact .container .wrap .contact-block2 .wrapp-email {
+        /* border: 2px solid red; */
+        font-size: 17px;
+        color: #262626;
+        font-family: "Raleway";
+        margin-bottom: 20px; }
+      .contact .container .wrap .contact-block2 .wrapp-phone {
+        /* border: 2px solid fuchsia; */
+        font-size: 17px;
+        line-height: 25px;
+        color: #262626;
+        font-family: "Raleway";
+        margin-bottom: 20px; }
     .contact .container .con-footer {
-      border: 2px solid black;
       display: flex;
       justify-content: space-between; }
       .contact .container .con-footer .Cfoot-container {
@@ -592,6 +583,9 @@
         display: flex;
         align-items: center;
         text-align: center; }
+        @media only screen and (min-width: 300px) {
+          .contact .container .con-footer .CFtext {
+            color: black; } }
       .contact .container .con-footer .CFtitle {
         font-family: Pacifico;
         font-size: 19px;
