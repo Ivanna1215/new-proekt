@@ -9,7 +9,6 @@
   @media only screen and (max-width: 767px) {
     .home {
       height: auto;
-      background: yellow;
       background-size: 100% 100%;
       padding-bottom: 20px; } }
   .home .container {
@@ -55,7 +54,6 @@
       height: 23%;
       margin-top: 30%; }
       .home .container .home-ttb .home-title {
-        border: 1px solid red;
         font-size: 45px;
         font-weight: 1000;
         color: #262626;
@@ -69,12 +67,12 @@
         color: #262626;
         font-weight: 300;
         font-family: "Raleway";
-        margin-bottom: 10px;
-        border: 1px solid magenta; }
+        margin-bottom: 10px; }
         @media only screen and (max-width: 767px) {
           .home .container .home-ttb .home-text {
-            width: 100%;
-            height: auto; } }
+            width: 75%;
+            height: auto;
+            font-size: 13px; } }
       .home .container .home-ttb .home-button {
         height: 50px;
         background-color: #ff6033;
@@ -82,7 +80,8 @@
         color: #ffffff;
         font-weight: 300;
         font-family: "Raleway";
-        border: none; }
+        border: none;
+        margin-left: 20%; }
         @media only screen and (max-width: 767px) {
           .home .container .home-ttb .home-button {
             font-size: 12px;
@@ -226,11 +225,14 @@
       display: flex;
       justify-content: space-between;
       /* margin-bottom: 5px; */ }
+      @media only screen and (min-width: 300px) and (max-width: 400px) {
+        .gallery .container .galpart-1 .peach {
+          margin-bottom: 15px; } }
       .gallery .container .galpart-1 .berries {
         display: flex;
         flex-direction: column; }
         .gallery .container .galpart-1 .berries .berri {
-          margin-bottom: 21px; }
+          margin-bottom: 15px; }
     @media only screen and (min-width: 600px) and (max-width: 2400px) {
       .gallery .container .galpart-2 {
         display: flex;
@@ -238,6 +240,9 @@
     @media only screen and (min-width: 600px) and (max-width: 1500px) {
       .gallery .container .galpart-2 .yogurt {
         margin-right: 15px; } }
+    @media only screen and (min-width: 300px) and (max-width: 400px) {
+      .gallery .container .galpart-2 .yogurt {
+        margin-bottom: 15px; } }
     .gallery .container .gal-but {
       font-size: 20px;
       color: #ffffff;
@@ -252,14 +257,15 @@
       @media only screen and (max-width: 767px) {
         .gallery .container .gal-but {
           font-size: 8px; } }
+      @media only screen and (min-width: 300px) and (max-width: 400px) {
+        .gallery .container .gal-but {
+          width: 100px;
+          height: 30px; } }
 
 .sub {
-  height: 500px;
+  height: 501px;
   margin: 0 auto;
-  background: url(../img/subscribe.png) bottom left; }
-  @media only screen and (min-width: 300px) and (max-width: 768px) {
-    .sub {
-      background-color: blanchedalmond; } }
+  background: url(../img/subscribe.png) right center; }
   .sub .container {
     height: 90%;
     margin: 0 auto; }
@@ -271,12 +277,12 @@
       text-align: left;
       margin-top: 200px;
       margin-bottom: 34px; }
-      @media only screen and (min-width: 300px) and (max-width: 500px) {
+      @media only screen and (min-width: 300px) and (max-width: 769px) {
         .sub .container .sub-title {
           font-size: 16px;
-          margin-top: 50px;
+          margin-top: 10px;
           margin-bottom: 15px;
-          color: blanchedalmond; } }
+          color: black; } }
     .sub .container .sub-text {
       font-size: 17px;
       color: #262626;
@@ -285,14 +291,17 @@
       margin-bottom: 20px; }
       @media only screen and (min-width: 300px) and (max-width: 500px) {
         .sub .container .sub-text {
-          color: red; } }
+          color: #7186b3;
+          margin-top: 5px;
+          font-size: 15px; } }
     .sub .container .row .form-group {
       display: flex;
       align-items: center;
       justify-content: center; }
       @media only screen and (min-width: 300px) and (max-width: 500px) {
         .sub .container .row .form-group {
-          margin-top: 120px; } }
+          margin-top: 120px;
+          margin-bottom: 50px; } }
       .sub .container .row .form-group .btn {
         border: none;
         background: #96B92C;
@@ -301,7 +310,10 @@
         color: #ffffff;
         font-weight: 300;
         font-family: "Raleway";
-        margin-top: 10px; }
+        margin-bottom: 10px; }
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+          .sub .container .row .form-group .btn {
+            margin-top: 10px; } }
 
 .blog {
   background-color: #B07CF7;
@@ -310,7 +322,6 @@
   flex-direction: column;
   justify-content: center; }
   .blog .blog-header {
-    border: 2px solid red;
     font-size: 90px;
     color: #ffffff;
     font-weight: 700;
@@ -327,9 +338,12 @@
   .blog .blog-element-1 {
     background: url("../img/juice.png") no-repeat;
     height: 311px;
-    position: relative; }
+    position: relative;
+    margin: 10px 10px; }
+    @media only screen and (min-width: 300px) and (max-width: 768px) {
+      .blog .blog-element-1 {
+        width: 280px; } }
     .blog .blog-element-1 .blog-gradient {
-      /* background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%); */
       background: linear-gradient(rgba(255, 255, 255, 0) 0%, black 100%);
       width: 100%;
       height: 150px;
@@ -357,13 +371,17 @@
     .blog .blog-element-1 .blog-big-text {
       width: 340px;
       height: 79px;
-      font-size: 20px;
+      font-size: 18px;
       color: #ffffff;
       font-weight: 600;
       font-family: "Raleway";
       position: relative;
-      left: 20px;
+      right: 10px;
       top: 150px; }
+      @media only screen and (min-width: 300px) and (max-width: 768px) {
+        .blog .blog-element-1 .blog-big-text {
+          font-size: 16px;
+          width: 280px; } }
     .blog .blog-element-1 .blog-small-text {
       width: 370px;
       font-size: 12px;
@@ -377,7 +395,11 @@
     background: url(../img/suup.png) center bottom no-repeat;
     background-size: cover;
     height: 311px;
-    position: relative; }
+    position: relative;
+    margin-bottom: 10px; }
+    @media only screen and (min-width: 300px) and (max-width: 768px) {
+      .blog .blog-element-2 {
+        width: 280px; } }
     .blog .blog-element-2 .blog-gradient {
       /* background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%); */
       background: linear-gradient(rgba(255, 255, 255, 0) 0%, black 100%);
@@ -412,6 +434,10 @@
       position: relative;
       left: 20px;
       top: 150px; }
+      @media only screen and (min-width: 300px) and (max-width: 768px) {
+        .blog .blog-element-2 .blog-big-text {
+          font-size: 16px;
+          width: 280px; } }
     .blog .blog-element-2 .blog-small-text {
       width: 370px;
       font-size: 12px;
@@ -424,7 +450,13 @@
   .blog .blog-element-3 {
     background: url(../img/raspberry.png) center;
     height: 310px;
+    margin-bottom: 10px;
     position: relative; }
+    @media only screen and (min-width: 300px) and (max-width: 768px) {
+      .blog .blog-element-3 {
+        background: url(../img/raspberry.png) right center;
+        width: 280px;
+        font-size: 16px; } }
     .blog .blog-element-3 .blog-gradient {
       /* background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%); */
       background: linear-gradient(rgba(255, 255, 255, 0) 0%, black 100%);
@@ -458,6 +490,11 @@
       position: relative;
       left: 20px;
       top: 150px; }
+      @media only screen and (min-width: 300px) and (max-width: 768px) {
+        .blog .blog-element-3 .blog-big-text {
+          font-size: 16px;
+          width: 290px;
+          padding-right: 100px; } }
     .blog .blog-element-3 .blog-small-text {
       width: 370px;
       font-size: 12px;
@@ -475,6 +512,13 @@
     color: #ffffff;
     font-weight: 300;
     font-family: "Raleway"; }
+    @media only screen and (min-width: 300px) and (max-width: 768px) {
+      .blog .blog-red {
+        font-size: 12px;
+        background-color: red;
+        width: 120px;
+        height: 20px;
+        margin-bottom: 10px; } }
 
 .contact {
   background: url(../img/nature.png) center;
@@ -505,10 +549,10 @@
           margin-bottom: 10px; } }
     .contact .container .wrap {
       margin: 0 auto; }
-      @media only screen and (min-width: 400px) {
+      @media only screen and (min-width: 700px) {
         .contact .container .wrap {
           display: flex;
-          justify-content: space-between; } }
+          justify-content: center; } }
       .contact .container .wrap .contact-block1 {
         display: flex;
         flex-direction: column; }

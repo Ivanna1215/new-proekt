@@ -1,11 +1,12 @@
 .sub {
     // width: 1500px;
-    height: 500px;
+    height: 501px;
     // border: 2px solid blue;
     margin: 0 auto;
-    background: url(../img/subscribe.png) bottom left;
-    @media only screen and (min-width:300px) and (max-width: 768px) {
-       background-color: blanchedalmond;
+    background: url(../img/subscribe.png) right center;
+    @media only screen and (min-width:300px) and (max-width: 400px) {
+        // background: url(../img/subscribe.png) right bottom;
+        // background-size:  no-repeat  500px;
       }
      
 
@@ -25,15 +26,14 @@ text-align: left;
 margin-top: 200px;
 margin-bottom: 34px;
 // border: 2px solid red;
-@media only screen and (min-width:300px) and (max-width: 500px) {
+@media only screen and (min-width:300px) and (max-width: 769px) {
    font-size: 16px;
-   margin-top: 50px;
+   margin-top: 10px;
 margin-bottom: 15px;
-color: blanchedalmond;
+color: black;
+
 
  }
-
-
     }
     .sub-text {
         // width: 572px;
@@ -44,7 +44,9 @@ font-weight: 300;
 font-family: "Raleway";
 margin-bottom: 20px;
 @media only screen and (min-width:300px) and (max-width: 500px) {
-   color: red;
+   color: rgb(113, 134, 179);
+   margin-top: 5px;
+   font-size: 15px;
  
   }
  
@@ -59,9 +61,10 @@ margin-bottom: 20px;
     //  border: 2px solid red;
      @media only screen and (min-width:300px) and (max-width: 500px) {
       margin-top: 120px;
-      
-    
+      margin-bottom:50px;
        }
+       
+
 
 .btn {
     // border: 2px solid rgb(41, 5, 99);
@@ -72,7 +75,16 @@ margin-bottom: 20px;
     color: #ffffff;
     font-weight: 300;
     font-family: "Raleway";
-    margin-top: 10px;
+    margin-bottom:10px;
+
+    @media only screen and (min-width:300px) and (max-width: 500px) {
+          
+    // transform: translateX(50%);
+
+    margin-top:10px;
+         }
+
+  
 }
 
 }
