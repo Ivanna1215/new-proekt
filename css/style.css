@@ -599,8 +599,7 @@
   margin: 0 auto;
   padding-top: 50px; }
   .contact .container {
-    margin: 0 auto;
-    color: red; }
+    margin: 0 auto; }
     .contact .container .contact-title {
       font-size: 90px;
       color: #262626;
@@ -620,11 +619,13 @@
       @media only screen and (max-width: 800px) {
         .contact .container .contact-text {
           font-size: 15px;
-          border: 2px solid red;
-          margin: 0 auto 0px auto; } }
+          margin: 0px auto 20px auto;
+          text-align: center;
+          width: 50%; } }
     .contact .container .wrap {
       margin: 0 auto;
-      border: 2px solid red; }
+      width: 100%;
+      justify-content: space-evenly; }
       @media only screen and (min-width: 700px) {
         .contact .container .wrap {
           display: flex; } }
@@ -673,8 +674,7 @@
           border: none;
           margin-top: 15px; }
       .contact .container .wrap .contact-block2 {
-        border: 3px solid red;
-        margin: 0px 0px 0px 20px; }
+        margin: 0px 0px 0px 0px; }
         .contact .container .wrap .contact-block2 .wrapp-address {
           /* border: 2px solid green; */
           font-size: 17px;
@@ -703,34 +703,52 @@
           font-family: "Raleway";
           margin-bottom: 20px; }
     .contact .container .con-footer {
+      border: 2px solid black;
       display: flex;
       justify-content: space-between; }
       .contact .container .con-footer .Cfoot-container {
         margin: 0 auto; }
-      .contact .container .con-footer .CFtext {
-        /* border: 2px solid blueviolet; */
-        font-size: 15px;
-        color: #b9b9b9;
-        font-weight: 300;
-        font-family: "Raleway";
-        display: flex;
-        align-items: center;
-        text-align: center; }
-        @media only screen and (min-width: 300px) {
-          .contact .container .con-footer .CFtext {
-            color: black; } }
-      .contact .container .con-footer .CFtitle {
-        font-family: Pacifico;
-        font-size: 19px;
-        color: #b9b9b9;
-        display: flex;
-        align-items: center; }
-      .contact .container .con-footer .love {
-        color: red;
-        padding: 5px; }
-      .contact .container .con-footer .footer-navigation__link {
-        text-decoration: none;
-        color: white; }
+      .contact .container .con-footer .Cfoot-container {
+        border: 2px solid red;
+        text-align: center;
+        margin: 0 auto; }
+        @media only screen and (min-width: 780px) and (max-width: 2400px) {
+          .contact .container .con-footer .Cfoot-container {
+            border: 2px solid red; } }
+        .contact .container .con-footer .Cfoot-container .CFtext {
+          border: 2px solid blueviolet;
+          font-size: 18px;
+          color: #b9b9b9;
+          font-weight: 300;
+          font-family: "Raleway";
+          text-align: center; }
+          @media only screen and (min-width: 300px) {
+            .contact .container .con-footer .Cfoot-container .CFtext {
+              color: black; } }
+        .contact .container .con-footer .Cfoot-container .CFtitle {
+          border: 2px solid pink;
+          font-family: Pacifico;
+          font-size: 19px;
+          color: #b9b9b9; }
+        .contact .container .con-footer .Cfoot-container .love {
+          color: red;
+          padding: 5px;
+          border: 2px solid green; }
+        .contact .container .con-footer .Cfoot-container .footer-navigation__link {
+          text-decoration: none;
+          border: 2px solid green;
+          color: white; }
+          .contact .container .con-footer .Cfoot-container .footer-navigation__link .CFtext {
+            border: 2px solid blueviolet;
+            font-size: 15px;
+            color: #b9b9b9;
+            font-weight: 300;
+            font-family: "Raleway";
+            font-size: 20px;
+            text-align: center; }
+            @media only screen and (min-width: 300px) {
+              .contact .container .con-footer .Cfoot-container .footer-navigation__link .CFtext {
+                color: black; } }
 
 @font-face {
   font-family: "Raleway";
