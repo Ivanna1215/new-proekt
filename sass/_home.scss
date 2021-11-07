@@ -14,58 +14,64 @@ position: relative;
     padding-bottom: 20px;
 }
 
-.container {
-    // width: 1200px;
-    // height: 100%;
-    // margin: 0 auto;
-    // position: relative;
-    border: 1px solid transparent;
-    .home-wrapper {
-    display: flex;
-    align-items:baseline ;
-    // border: 2px solid red;
-    position: fixed;
-    width: 1200px;
-    background-color: #fff;
-    }
-    .home-logo {
-    width: 50%;
-    /* border: 2px solid blue; */
-    font-family: Pacifico;
-    font-size:30px;
-    margin-top: 30px;
-    }
-    .logo-navigation__link {
-    text-decoration: none;
-    /* border: 2px solid green; */
-    color: black;
+
+    // .home-wrapper {
+    // display: flex;
+    // align-items:baseline ;
+    // // border: 2px solid red;
     // position: fixed;
-    }
-    .logo-navigation__link:hover {
-    color:#ff6033 ;
-    }
-    .navigation {
-    // border: 2px solid pink;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
-    margin-top: 30px;
-    /* position: fixed; */
-    left: 550px;
-    }
-    .navigation__link {
-    text-decoration: none;
-    font-size: 16px;
-    color: #262626;
-    font-weight: 700;
-    font-family: "Raleway";
-    border: 2px solid transparent; 
-    }
-    .navigation__link:hover {
-    border-top: 2px solid orangered;
-    }
+    // width: 1200px;
+    // background-color: #fff;
+    // }
+    // .home-logo {
+    // width: 50%;
+    // /* border: 2px solid blue; */
+    // font-family: Pacifico;
+    // font-size:30px;
+    // margin-top: 30px;
+    // }
+    // .logo-navigation__link {
+    // text-decoration: none;
+    // /* border: 2px solid green; */
+    // color: black;
+    // // position: fixed;
+    // }
+    // .logo-navigation__link:hover {
+    // color:#ff6033 ;
+    // }
+    // .navigation {
+    // // border: 2px solid pink;
+    // width: 50%;
+    // display: flex;
+    // justify-content: space-evenly;
+    // align-items: center;
+    // text-transform: uppercase;
+    // margin-top: 30px;
+    // /* position: fixed; */
+    // left: 550px;
+    // }
+    // .navigation__link {
+    // text-decoration: none;
+    // font-size: 16px;
+    // color: #262626;
+    // font-weight: 700;
+    // font-family: "Raleway";
+    // border: 2px solid transparent; 
+    // }
+    // .navigation__link:hover {
+    // border-top: 2px solid orangered;
+    // }
+
+
+
+
+
+
+
+
+
+
+
     .home-ttb {
     /* border:2px solid red ; */
     // width: 50%;
@@ -131,5 +137,4 @@ position: relative;
 
     }                
     }
-}
   

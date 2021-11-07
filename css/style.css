@@ -1,3 +1,101 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50; }
+  .header::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: yellow;
+    z-index: 2; }
+  .header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center; }
+  .header__logo {
+    width: 50%;
+    font-family: Pacifico;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 3;
+    padding: 0; }
+  .header__burger {
+    display: none; }
+  .header__list {
+    display: flex;
+    margin: 0;
+    position: relative;
+    z-index: 2; }
+    .header__list li {
+      list-style: none;
+      margin-left: 20px; }
+  .header__link {
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none; }
+  @media (max-width: 767px) {
+    .header__body {
+      height: 50px; }
+    .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3; }
+      .header__burger span {
+        position: absolute;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s; }
+      .header__burger::before, .header__burger::after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s; }
+      .header__burger::before {
+        top: 0; }
+      .header__burger::after {
+        bottom: 0; }
+      .header__burger.active span {
+        transform: scale(0); }
+      .header__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px; }
+      .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px; }
+    .header__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: green;
+      padding: 70px 10px 20px 10px; }
+    .header .header__menu.active {
+      top: 0; }
+    .header__list {
+      display: block; }
+      .header__list__list li {
+        margin: 0px 0px 20px 0px; } }
+
 .home {
   height: 900px;
   /* border: 2px solid red; */
@@ -11,89 +109,51 @@
       height: auto;
       background-size: 100% 100%;
       padding-bottom: 20px; } }
-  .home .container {
-    border: 1px solid transparent; }
-    .home .container .home-wrapper {
-      display: flex;
-      align-items: baseline;
-      position: fixed;
-      width: 1200px;
-      background-color: #fff; }
-    .home .container .home-logo {
-      width: 50%;
-      /* border: 2px solid blue; */
-      font-family: Pacifico;
-      font-size: 30px;
-      margin-top: 30px; }
-    .home .container .logo-navigation__link {
-      text-decoration: none;
-      /* border: 2px solid green; */
-      color: black; }
-    .home .container .logo-navigation__link:hover {
-      color: #ff6033; }
-    .home .container .navigation {
-      width: 50%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      text-transform: uppercase;
-      margin-top: 30px;
-      /* position: fixed; */
-      left: 550px; }
-    .home .container .navigation__link {
-      text-decoration: none;
-      font-size: 16px;
+  .home .home-ttb {
+    /* border:2px solid red ; */
+    height: 23%;
+    margin-top: 30%; }
+    .home .home-ttb .home-title {
+      font-size: 45px;
+      font-weight: 1000;
       color: #262626;
-      font-weight: 700;
       font-family: "Raleway";
-      border: 2px solid transparent; }
-    .home .container .navigation__link:hover {
-      border-top: 2px solid orangered; }
-    .home .container .home-ttb {
-      /* border:2px solid red ; */
-      height: 23%;
-      margin-top: 30%; }
-      .home .container .home-ttb .home-title {
-        font-size: 45px;
-        font-weight: 1000;
-        color: #262626;
-        font-family: "Raleway";
-        margin-bottom: 10px; }
-        @media only screen and (min-width: 600px) and (max-width: 1000px) {
-          .home .container .home-ttb .home-title {
-            color: blue; } }
-      .home .container .home-ttb .home-text {
-        font-size: 17px;
-        color: #262626;
-        font-weight: 300;
-        font-family: "Raleway";
-        margin-bottom: 10px; }
-        @media only screen and (max-width: 767px) {
-          .home .container .home-ttb .home-text {
-            width: 75%;
-            height: auto;
-            font-size: 13px; } }
-      .home .container .home-ttb .home-button {
-        height: 50px;
-        background-color: #ff6033;
-        font-size: 20px;
-        color: #ffffff;
-        font-weight: 300;
-        font-family: "Raleway";
-        border: none;
-        margin-left: 20%; }
-        @media only screen and (max-width: 767px) {
-          .home .container .home-ttb .home-button {
-            font-size: 12px;
-            background-color: blue; } }
-    .home .container .home-mouse {
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      transform: translate 0, 50%; }
+      margin-bottom: 10px; }
+      @media only screen and (min-width: 600px) and (max-width: 1000px) {
+        .home .home-ttb .home-title {
+          color: blue; } }
+    .home .home-ttb .home-text {
+      font-size: 17px;
+      color: #262626;
+      font-weight: 300;
+      font-family: "Raleway";
+      margin-bottom: 10px; }
       @media only screen and (max-width: 767px) {
-        .home .container .home-mouse {
-          display: none; } }
+        .home .home-ttb .home-text {
+          width: 75%;
+          height: auto;
+          font-size: 13px; } }
+    .home .home-ttb .home-button {
+      height: 50px;
+      background-color: #ff6033;
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 300;
+      font-family: "Raleway";
+      border: none;
+      margin-left: 20%; }
+      @media only screen and (max-width: 767px) {
+        .home .home-ttb .home-button {
+          font-size: 12px;
+          background-color: blue; } }
+  .home .home-mouse {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate 0, 50%; }
+    @media only screen and (max-width: 767px) {
+      .home .home-mouse {
+        display: none; } }
 
 .about {
   height: 700px;

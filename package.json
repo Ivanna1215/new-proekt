@@ -10,6 +10,7 @@
   "author": "Ivanna Kovaliv",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0"
   }
