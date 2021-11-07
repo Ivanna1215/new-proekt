@@ -12,6 +12,11 @@
     font-weight: 700;
     font-family: "Raleway" ;
     text-align: center;
+    @media only screen  and (max-width: 768px) {
+        font-size: 45px;
+     }
+
+
     }
     .blog-text {
        
@@ -22,6 +27,9 @@
     font-weight: 300;
     font-family: "Raleway";
     text-align: center;
+    @media only screen  and (max-width: 768px) {
+        font-size: 15px;
+     }
 
     }
    
@@ -80,7 +88,6 @@
 
              }
 
-
             }
             .blog-small-text {
                 width: 370px;
@@ -133,18 +140,18 @@
                 left: 45px;
                 }
                 .blog-big-text {
-                    width: 340px;
+                    // width: 340px;
                 height: 79px;
-                font-size: 20px;
+                font-size: 18px;
                 color: #ffffff;
                 font-weight: 600;
                 font-family: "Raleway";
                 position: relative;
-                left: 20px;
+               right: 10px;
                 top: 150px;
                 @media only screen and (min-width:300px) and (max-width: 768px) {
                     font-size: 16px;
-                    width: 280px;
+                    // width: 280px;
                    
                 }
                     
@@ -197,24 +204,24 @@
                 left: 45px;
                 }
                 .blog-big-text {
-                    width: 340px;
+                    // width: 310px;
                 height: 79px;
-                font-size: 20px;
+                font-size: 18px;
                 color: #ffffff;
                 font-weight: 600;
                 font-family: "Raleway";
                 position: relative;
-                left: 20px;
+                left: 0;
                 top: 150px;
                 // border: 2px solid red;
                 @media only screen and (min-width:300px) and (max-width: 768px) {
                     font-size: 16px;
-                    width: 290px;
+                    // width: 290px;
                     padding-right: 100px;
                 }
                 }
                 .blog-small-text {
-                    width: 370px;
+                    // width: 370px;
                     font-size: 12px;
                     color: rgba(255, 255, 255,0.7);
                     font-weight: 600;
@@ -227,7 +234,6 @@
 
    
     .blog-red {
-        // width: 200px;
         height: 56px;
         background: red;
         text-transform: uppercase;
@@ -235,6 +241,7 @@
     color: #ffffff;
     font-weight: 300;
     font-family: "Raleway";
+    margin-bottom: 10px;
     @media only screen and (min-width:300px) and (max-width: 768px) {
         font-size: 12px;
         background-color: red;
@@ -242,6 +249,7 @@
         height: 20px;
         margin-bottom: 10px;
     }
+
     }
     
 }

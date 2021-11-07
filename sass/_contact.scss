@@ -26,42 +26,41 @@ text-align: center;
 
 }
 .contact-text {
-    // width: 344px;
-    // height: 42px;
     /* border: 2px solid purple; */
-    margin: 20px auto;
-    // width: 570px;
-    // height: 66px;
     font-size: 17px;
     color: #262626;
     font-weight: 300;
     font-family: "Raleway";
     text-align: center;
+    
     // border: 2px solid red;
 
     @media only screen and (max-width: 800px) {
-        // width: 200px;
-        margin-bottom: 10px;
+        // width: 400px;
+        font-size: 15px;
+        border: 2px solid red;
+        margin: 0 auto 0px auto;
     }    
 }   
 .wrap{
 margin: 0 auto;
-//  border: 2px solid red; 
+ border: 2px solid red; 
+
 
  @media only screen and (min-width: 700px) {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
 }    
 
  .contact-block1 {
     // border: 2px solid red;
-    display: flex;
-    flex-direction: column;
+ margin: 0 50px 50px 0;
+ text-align: center;
+
     @media only screen and (min-width:300px) and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        
+        margin: 0px 20px 20px 0px;
      }
 
     .contact-name {
@@ -74,6 +73,7 @@ margin: 0 auto;
         padding: 10px;
         color: white;
         outline: none;
+       margin:  0 auto 10px auto;
     }
     .contact-message {
         background-color:#7DDFDF;
@@ -81,6 +81,7 @@ margin: 0 auto;
         border: none;
         padding: 25px;
         outline: none;
+        text-align: center;
     }
     input::placeholder,
     textarea::placeholder {
@@ -91,17 +92,31 @@ textarea:focus {
     background-color:#00C4C4;
     border-left: 3px solid gray;
 }
+.send {
+    width: 200px;
+    height: 56px;
+    background:#3477AC;
+    text-transform: uppercase;
+    font-size: 20px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 300;
+font-family: "Raleway";
+margin: 0 auto; 
+border: none;
+margin-top: 15px;
+}
+
 
 }
 .contact-block2 {
     // border: 2px solid blue; 
     // width: 40%;
+    border: 3px solid red;
+    margin: 0px 0px 0px 20px;
 
-
-    @media only screen and (min-width:600px) and (max-width: 2400px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    @media only screen  and (max-width:768px) {
+      
      }
    
     .wrapp-address {
@@ -110,6 +125,9 @@ textarea:focus {
     color: #262626;
     font-family: "Raleway";
     margin-bottom: 20px;
+    @media only screen  and (max-width:768px) {
+        font-size: 15px;
+    }
     }
     .contact-title-AeP {
         font-weight: 700;

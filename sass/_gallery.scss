@@ -1,7 +1,5 @@
 .gallery {
-    // height: 1580px;
     //  border: 2px solid red;
-    // height: auto;
     margin: 0 auto;
     background-color:#FFE92F;
 
@@ -24,8 +22,6 @@ margin: 0 auto;
     }
     }
     .gal-text {
-    // width: 630px;
-    // height: 90px;
     font-size: 17px;
     color: #262626;
     font-weight: 300;
@@ -40,7 +36,6 @@ margin: 0 auto;
         display: flex;
         justify-content: space-between;
         // border: 2px solid red;
-        /* margin-bottom: 5px; */ 
         .peach { 
         @media only screen and (min-width:300px) and (max-width: 400px) {
             
@@ -60,9 +55,10 @@ margin-bottom:15px;
     // border: 2px solid red;
     
   
-    @media only screen and (min-width:600px) and (max-width: 2400px) {
+    @media only screen and (min-width:600px) and (max-width: 2800px) {
         display: flex;
         justify-content: space-between;
+        margin-top: 10px;
      }
   
     .yogurt {
@@ -83,16 +79,12 @@ margin-bottom:15px;
 
 .gal-but {
     font-size: 20px;
-    // line-height: 27px;
     color: #ffffff;
     font-weight: 300;
     font-family: "Raleway";
     background: #5585A2;
     margin: 20px auto;
     text-align: center;
-    
-    // width: 200px;
-    // height: auto;
     border: 2px solid blue;
     max-width: 150px;
     margin-bottom: 20px;  
@@ -104,8 +96,6 @@ margin-bottom:15px;
            height: 30px;
        
          }
-
-
 
 
 }

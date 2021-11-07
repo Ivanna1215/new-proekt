@@ -1,4 +1,5 @@
 
+
 .header {
   position: fixed;
   top: 0;
@@ -13,7 +14,7 @@
     top: 0;
     left: 0;
     content: '';
-    background-color:yellow ;
+    background-color: white;
 z-index: 2;
     
 }
@@ -40,14 +41,14 @@ z-index: 2;
     display: none;
   
 }
-&__menu {
+// &__menu {
  
-}
+// }
 &__list {
     display: flex;
     margin: 0; 
     position: relative;
-    z-index: 2;// Відео тут на 13:18
+    z-index: 2;
     
     & li {
         list-style: none;
@@ -60,7 +61,12 @@ z-index: 2;
     font-size: 18px;
     text-decoration: none;
 }
+
 @media (max-width:767px)  {
+    body.lock {
+        overflow: hidden;
+    }
+
     &__body {
         height: 50px;
     }
@@ -114,12 +120,13 @@ transform: scale(0);
        top: -100%;
        left: 0;
        width: 100%;
-       height: 100%;
+       height: 30%;
+       overflow: auto;
        transition: all 0.3s ease 0s;
-       background-color: green;
+       background-color: white;
        padding: 70px 10px 20px 10px;
    }
-   .header__menu.active {
+   &__menu.active {
        top: 0;
    }
 
@@ -128,6 +135,9 @@ transform: scale(0);
        &__list li {
            margin: 0px 0px 20px 0px;
        }
+   }
+   &__link {
+       font-size: 24px;
    }
    
 }
