@@ -6,6 +6,9 @@
   left: 0;
   width: 100%;
   z-index: 50;
+  font-family:"Raleway";
+  font-weight: 300;
+   
   
   &::before {
     position: absolute;
@@ -29,7 +32,7 @@ z-index: 2;
 }
 &__logo {
     width: 50%;
-    font-family: Pacifico;
+    font-family:'Raleway';
      font-size:30px;
      text-decoration: none;
      color: black;
@@ -53,12 +56,12 @@ z-index: 2;
     margin: 0; 
     position: relative;
     z-index: 2;
-    font-family: "Raleway";
+    font-family:'Raleway';
     
     & li {
         list-style: none;
         margin-left: 20px;
-        font-family: "Raleway";
+        font-family: 'Raleway';
     }
 }
 &__link {
@@ -68,6 +71,7 @@ z-index: 2;
     text-decoration: none;
 border-top: 1px solid white;
 font-family: "Raleway";
+font-weight: 700;
    
 }
 @media (min-width:767px)  {
