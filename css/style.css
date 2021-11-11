@@ -337,24 +337,27 @@
             .gallery .container .galpart-1 .berries .berri-1 {
               margin-bottom: 15px; } }
     .gallery .container .galpart-2 {
+      border: 2px solid red;
       height: 100%; }
       @media only screen and (min-width: 768px) and (max-width: 2800px) {
         .gallery .container .galpart-2 {
-          display: flex;
-          justify-content: space-between;
           margin-top: 10px; } }
-      @media only screen and (min-width: 600px) and (max-width: 1500px) {
-        .gallery .container .galpart-2 .yog {
-          margin-right: 15px; } }
-      @media only screen and (min-width: 300px) and (max-width: 400px) {
-        .gallery .container .galpart-2 .yog {
-          margin-bottom: 15px; } }
-      @media only screen and (min-width: 600px) and (max-width: 1500px) {
-        .gallery .container .galpart-2 .pers {
-          margin-right: 15px; } }
-      @media only screen and (min-width: 300px) and (max-width: 400px) {
-        .gallery .container .galpart-2 .pers {
-          margin-bottom: 15px; } }
+      .gallery .container .galpart-2 .yog {
+        height: 100%; }
+        @media only screen and (min-width: 768px) and (max-width: 2800px) {
+          .gallery .container .galpart-2 .yog {
+            margin-right: 15px; } }
+        @media only screen and (max-width: 320px) {
+          .gallery .container .galpart-2 .yog {
+            margin-bottom: 15px; } }
+      .gallery .container .galpart-2 .pers {
+        height: auto; }
+        @media only screen and (min-width: 768px) and (max-width: 2400px) {
+          .gallery .container .galpart-2 .pers {
+            margin-right: 15px; } }
+        @media only screen and (max-width: 320px) {
+          .gallery .container .galpart-2 .pers {
+            margin-bottom: 15px; } }
     .gallery .container .gal-but {
       font-size: 20px;
       color: #ffffff;
@@ -377,7 +380,10 @@
 .sub {
   height: 501px;
   margin: 0 auto;
-  background: url(../img/subscribe.png) right center; }
+  background: url(../img/subscribe.png) center no-repeat; }
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+    .sub {
+      background: url(../img/subscribe.png) right center; } }
   .sub .container {
     height: 90%;
     margin: 0 auto; }
