@@ -168,91 +168,68 @@ margin-top: 15px;
     // background-color:#262626;
     // height: 20%;
     // width: 100%;
-    display: flex;
+
+@media only screen and (min-width: 768px) {
+        display: flex;
 justify-content: space-between;
-.Cfoot-container {
-
-margin: 0 auto;
-// border: 2px solid blue; 
-
-
-
 }
- .Cfoot-container{
-     border: 2px solid red;
-     text-align: center;
-     margin: 0 auto;
-    
-    @media only screen and (min-width:780px)  and (max-width:2400px)  {
-    //    margin-left: 0;
-    // justify-content: center;
-    // align-items: center;
-    border: 2px solid red;    
-                }    
-    
+
 
     .CFtext {
-        border: 2px solid blueviolet; 
+        border: 2px solid red; 
         font-size: 18px;
-        color: #b9b9b9;
+        color: white;
         font-weight: 300;
         font-family: "Raleway";
         text-align: center;
         // width: 30%;
         // margin-left: 150px;
         
-        @media only screen and (min-width: 300px) {
-color: black;
-
-        
-        }    
+   
 
         }
         .CFtitle {
-            border: 2px solid pink; 
+            border: 2px solid blue; 
             font-family: Pacifico;
         font-size:19px;
         color: #b9b9b9;
         // width: 30%;
         // margin-left: 150px;
-     
+
+        .footer-navigation__link {
+            text-decoration: none;
+            /* border: 2px solid green; */
+            color: white;
+            text-align: center;
         }
+     
+    }
+
+    .CFmade {
+        border: 2px solid blueviolet; 
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+        font-family: "Raleway";
+        text-align: center;
+        // width: 30%;
+        // margin-left: 150px;
+
+        @media only screen and (min-width: 768px) {
+            display: flex;
+    justify-content: space-between;
+    }
+
         .love {
             color: red;
             padding: 5px;
             border: 2px solid green;
         }
-        .footer-navigation__link {
-            text-decoration: none;
-            border: 2px solid green;
-            color: white;
-            // margin-right: 10px;
-            @media only scree  and (min-width: 768px) and (max-width:2400px) {
-                // margin-right: 20px;
-                        
-                        }   
-
-                        .CFtext {
-                            border: 2px solid blueviolet; 
-                            font-size: 15px;
-                            color: #b9b9b9;
-                            font-weight: 300;
-                            font-family: "Raleway";
-                            // width: 30%;
-                            font-size: 20px;
-                        //    margin-right: 150px;
-                            text-align: center;
-                            
-                            @media only screen and (min-width: 300px) {
-                    color: black;
-                 
-                            
-                            }    
-                    
+    }
+       
                             }
 
         }
  }
-}
-}
-}
+
+

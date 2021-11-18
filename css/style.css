@@ -754,52 +754,43 @@
           font-family: "Raleway";
           margin-bottom: 20px; }
     .contact .container .con-footer {
-      border: 2px solid black;
-      display: flex;
-      justify-content: space-between; }
-      .contact .container .con-footer .Cfoot-container {
-        margin: 0 auto; }
-      .contact .container .con-footer .Cfoot-container {
+      border: 2px solid black; }
+      @media only screen and (min-width: 768px) {
+        .contact .container .con-footer {
+          display: flex;
+          justify-content: space-between; } }
+      .contact .container .con-footer .CFtext {
         border: 2px solid red;
-        text-align: center;
-        margin: 0 auto; }
-        @media only screen and (min-width: 780px) and (max-width: 2400px) {
-          .contact .container .con-footer .Cfoot-container {
-            border: 2px solid red; } }
-        .contact .container .con-footer .Cfoot-container .CFtext {
-          border: 2px solid blueviolet;
-          font-size: 18px;
-          color: #b9b9b9;
-          font-weight: 300;
-          font-family: "Raleway";
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+        font-family: "Raleway";
+        text-align: center; }
+      .contact .container .con-footer .CFtitle {
+        border: 2px solid blue;
+        font-family: Pacifico;
+        font-size: 19px;
+        color: #b9b9b9; }
+        .contact .container .con-footer .CFtitle .footer-navigation__link {
+          text-decoration: none;
+          /* border: 2px solid green; */
+          color: white;
           text-align: center; }
-          @media only screen and (min-width: 300px) {
-            .contact .container .con-footer .Cfoot-container .CFtext {
-              color: black; } }
-        .contact .container .con-footer .Cfoot-container .CFtitle {
-          border: 2px solid pink;
-          font-family: Pacifico;
-          font-size: 19px;
-          color: #b9b9b9; }
-        .contact .container .con-footer .Cfoot-container .love {
+      .contact .container .con-footer .CFmade {
+        border: 2px solid blueviolet;
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+        font-family: "Raleway";
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          .contact .container .con-footer .CFmade {
+            display: flex;
+            justify-content: space-between; } }
+        .contact .container .con-footer .CFmade .love {
           color: red;
           padding: 5px;
           border: 2px solid green; }
-        .contact .container .con-footer .Cfoot-container .footer-navigation__link {
-          text-decoration: none;
-          border: 2px solid green;
-          color: white; }
-          .contact .container .con-footer .Cfoot-container .footer-navigation__link .CFtext {
-            border: 2px solid blueviolet;
-            font-size: 15px;
-            color: #b9b9b9;
-            font-weight: 300;
-            font-family: "Raleway";
-            font-size: 20px;
-            text-align: center; }
-            @media only screen and (min-width: 300px) {
-              .contact .container .con-footer .Cfoot-container .footer-navigation__link .CFtext {
-                color: black; } }
 
 @font-face {
   font-family: "Raleway";
